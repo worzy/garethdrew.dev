@@ -1,11 +1,18 @@
-@extends('_layouts.master')
+<!DOCTYPE html>
+<html lang="en">
 
-@section('meta_title', 'Full Stack Laravel & PHP Developer - London | Gareth Drew')
+<head>
+    <title>Full Stack Laravel &amp; PHP Developer - London | Gareth Drew</title>
+    <meta name="description" content="A full stack web developer working with a number of technologies including PHP, Laravel, Vue.js. Currently based in London, UK.">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="/assets/build/css/main.css?id=e354caddbdc8b2569bea">
+</head>
 
-@section('meta_description', 'A full stack web developer working with a number of technologies including PHP, Laravel, Vue.js. Currently based in London, UK.')
-
-@section('body')
-<div class="container mx-auto">
+<body>
+    <div class="font-master">
+        <div class="container mx-auto">
     <div class="pb-16 max-w-5xl mt-16 px-8">
         <h1>Hello, I'm Gareth, a full stack PHP & Laravel developer based in London, UK.</h1>
     </div>
@@ -15,7 +22,7 @@
     <div class="container mx-auto">
         <div class="max-w-4xl p-8">
             <h2>About me</h2>
-            <p class="pt-8">I have over {{ Carbon\Carbon::now()->diffInYears(Carbon\Carbon::parse('2008-10-01 00:00:00')) }} experience in web technologies, delivering a variety of implementations across many different industries. My background is mainly in backend technologies, primarily PHP, most recently building Laravel applications for over {{ Carbon\Carbon::now()->diffInYears(Carbon\Carbon::parse('2012-01-01 00:00:00')) }} years.</p>
+            <p class="pt-8">I have over 11 experience in web technologies, delivering a variety of implementations across many different industries. My background is mainly in backend technologies, primarily PHP, most recently building Laravel applications for over 7 years.</p>
             <p class="pt-8">Along the way I've also worked across the entire stack of a web application from frontend development to design of hosting architecutre in AWS using a infrastructure as code approach with Terraform, Ansible and Puppet.</p>
             <p class="pt-8">Want to discuss working together, then contact me on <a target="_blank" href="https://www.linkedin.com/in/garethdrew/">LinkedIn</a>.</p>
         </div>
@@ -86,4 +93,7 @@
     </div>
 </div>
 
-@endsection
+    </div>
+</body>
+
+</html>
