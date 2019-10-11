@@ -16,11 +16,16 @@ class GenerateSitemap
         collect($jigsaw->getOutputPaths())->each(function ($path) use ($baseUrl, $sitemap, $ignoredPaths) {
 
             if (!$this->isAsset($path) && !$this->isInIgnoreList($path, $ignoredPaths)) {
-                $sitemap->addItem($baseUrl . $path, time(), Sitemap::DAILY);
+                $sitemap->addItem($baseUrl . $this->checkRootPath($path), time(), Sitemap::DAILY);
             }
         });
 
         $sitemap->write();
+    }
+
+    private function checkRootPath($path)
+    {
+        return $path == '/index.html' ? '/' : $path;
     }
 
     private function isAsset($path)
