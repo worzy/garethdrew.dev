@@ -15,7 +15,7 @@
     <div class="container mx-auto">
         <div class="max-w-4xl p-8">
             <h2>About me</h2>
-            <p class="pt-8">I have over {{ Carbon\Carbon::now()->diffInYears(Carbon\Carbon::parse('2008-10-01 00:00:00')) }} experience in web technologies, delivering a variety of implementations across many different industries. My background is mainly in backend technologies, primarily PHP, most recently building Laravel applications for over {{ Carbon\Carbon::now()->diffInYears(Carbon\Carbon::parse('2012-01-01 00:00:00')) }} years.</p>
+            <p class="pt-8">I have over {{ Carbon\Carbon::now()->diffInYears(Carbon\Carbon::parse('2008-10-01 00:00:00')) }} years experience in web technologies, delivering a variety of implementations across many different industries. My background is mainly in backend technologies, primarily PHP, most recently building Laravel applications for over {{ Carbon\Carbon::now()->diffInYears(Carbon\Carbon::parse('2012-01-01 00:00:00')) }} years.</p>
             <p class="pt-8">Along the way I've also worked across the entire stack of a web application from frontend development to design of hosting architecutre in AWS using an infrastructure as code approach with Terraform, Ansible and Puppet.</p>
             <p class="pt-8">Want to discuss working together? Then contact me on <a rel="noopener" target="_blank" href="https://www.linkedin.com/in/garethdrew/">LinkedIn</a>.</p>
         </div>
