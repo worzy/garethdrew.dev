@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
  <url>
-  <loc>https://garethdrew.dev/</loc>
-  <lastmod>2019-10-12T19:32:32+00:00</lastmod>
+  <loc>https://garethdrew.dev</loc>
+  <lastmod>2020-08-14T17:02:19+00:00</lastmod>
+  <changefreq>daily</changefreq>
+ </url>
+ <url>
+  <loc>https://garethdrew.dev/404</loc>
+  <lastmod>2020-08-14T17:02:19+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
 </urlset>
