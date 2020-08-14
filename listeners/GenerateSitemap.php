@@ -2,8 +2,9 @@
 
 namespace App\Listeners;
 
-use TightenCo\Jigsaw\Jigsaw;
+use Illuminate\Support\Str;
 use samdark\sitemap\Sitemap;
+use TightenCo\Jigsaw\Jigsaw;
 
 class GenerateSitemap
 {
@@ -30,7 +31,7 @@ class GenerateSitemap
 
     private function isAsset($path)
     {
-        return starts_with($path, '/assets');
+        return Str::startsWith($path, '/assets');
     }
 
     private function isInIgnoreList($path, $ignoredPaths)
